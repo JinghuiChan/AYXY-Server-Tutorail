@@ -1,0 +1,143 @@
+site_name: 计数学院服务器使用手册
+site_description: 计数学院服务器使用手册
+site_url:
+site_author: Jinghui Chan
+
+repo_name: DataStructure
+repo_url:
+
+copyright: Copyright &copy; 2024-present <a href="https://github.com/JinghuiChan/DataStructure/tree/master/docs" target="_blank" rel="noopener noreferrer">Jinghui Chan</a>
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: cyan
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - header.autohide
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.annotate
+    - content.tabs.link
+    - navigation.expand
+    - navigation.path
+    # - toc.integrate
+    # - navigation.indexes
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.instant
+    # - navigation.expand
+    # - navigation.sections
+
+
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+    #annotation: material/arrow-right-circle
+    annotation: material/plus-circle
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      #link: https://github.com/JinghuiChan/ComputerWings
+
+nav:
+  - 第1章 绪论:
+      - 什么是数据结构？: "第1章 绪论/1.1 什么是数据结构？.md"
+  - 第2章 线性表:
+      - 2.1 顺序表: "第2章 线性表/2.1 顺序表.md"
+      - 2.2 单链表: "第2章 线性表/2.2 单链表.md"
+      - 2.3 双链表: "第2章 线性表/2.3 双链表.md"
+      - 2.4 课后习题: "第2章 线性表/课后习题.md"
+  - 第3章 栈和队列:
+      - 3.1 栈: "第3章 栈和队列/3.1 栈.md"
+  - 第5章 树和二叉树:
+      - 5.1 树与二叉树的概念及性质: "第5章 树和二叉树/5.1 树与二叉树的概念及性质.md"
+      - 5.2 二叉树的存储: "第5章 树和二叉树/5.2 二叉树的存储.md"
+      - 5.x 课后习题: "第5章 树和二叉树/课后习题.md"
+
+#nav:
+#  - 前言: "index.md"
+#  - 必学工具:
+#      - 翻墙: "必学工具/翻墙.md"
+#      - Vim: "必学工具/Vim.md"
+#      - Emacs: "必学工具/Emacs.md"
+#      - Git: "必学工具/Git.md"
+#      - GitHub: "必学工具/GitHub.md"
+#      - "GNU Make": "必学工具/GNU_Make.md"
+#      - CMake: "必学工具/CMake.md"
+#      - LaTeX: "必学工具/LaTeX.md"
+#      - Docker: "必学工具/Docker.md"
+#      - Scoop: "必学工具/Scoop.md"
+#      - 日常学习工作流: "必学工具/workflow.md"
+#      - 实用工具箱: "必学工具/tools.md"
+#      - 信息检索: "必学工具/信息检索.md"
+#  - 好书推荐: "好书推荐.md"
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:              #使用数学公式MathJax，需要添加config.js in file javascripts
+      generic: true
+
+# 表格具有排序功能，还需要添加tables.js
+# 可以使用数学公式 MathJax ，需添加config.js
+extra_javascript:
+  - javascripts/tables.js
+  #  - javascripts/tablesort.js
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+plugins:
+  - glightbox
+
+
+
+
+# pip install mkdocs-material
+# pip install mkdocs-glightbox
+# pip install markdown-checklist
+# pip install mkdocs-link-marker    # https://github.com/timmeinerzhagen/mkdocs-link-marker
+
+
+# mkdocs serve  运行
