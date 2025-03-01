@@ -1,12 +1,12 @@
 site_name: 计数学院服务器使用手册
 site_description: 计数学院服务器使用手册
-site_url:
+site_url: https://ayxy-server-tutorail.readthedocs.io/zh-cn/latest/
 site_author: Jinghui Chan
 
-repo_name: DataStructure
-repo_url:
+repo_name: AYXY-Server-Tutorial
+repo_url: https://github.com/JinghuiChan/AYXY-Server-Tutorail.git
 
-copyright: Copyright &copy; 2024-present <a href="https://github.com/JinghuiChan/DataStructure/tree/master/docs" target="_blank" rel="noopener noreferrer">Jinghui Chan</a>
+copyright: Copyright &copy; 2024-present <a href="https://ayxy-server-tutorail.readthedocs.io/zh-cn/latest/" target="_blank" rel="noopener noreferrer">Jinghui Chan</a>
 
 theme:
   name: material
@@ -70,19 +70,11 @@ extra:
       #link: https://github.com/JinghuiChan/ComputerWings
 
 nav:
-  - 第1章 绪论:
-      - 什么是数据结构？: "第1章 绪论/1.1 什么是数据结构？.md"
-  - 第2章 线性表:
-      - 2.1 顺序表: "第2章 线性表/2.1 顺序表.md"
-      - 2.2 单链表: "第2章 线性表/2.2 单链表.md"
-      - 2.3 双链表: "第2章 线性表/2.3 双链表.md"
-      - 2.4 课后习题: "第2章 线性表/课后习题.md"
-  - 第3章 栈和队列:
-      - 3.1 栈: "第3章 栈和队列/3.1 栈.md"
-  - 第5章 树和二叉树:
-      - 5.1 树与二叉树的概念及性质: "第5章 树和二叉树/5.1 树与二叉树的概念及性质.md"
-      - 5.2 二叉树的存储: "第5章 树和二叉树/5.2 二叉树的存储.md"
-      - 5.x 课后习题: "第5章 树和二叉树/课后习题.md"
+  - 服务器介绍:
+      - 服务器介绍: "服务器介绍/服务器硬件以及网络.md"
+  - 科研成果登记系统:
+      - 项目部署: "科研成果登记系统/系统启动步骤.md"
+
 
 #nav:
 #  - 前言: "index.md"
