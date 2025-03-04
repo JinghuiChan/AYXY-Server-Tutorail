@@ -74,6 +74,54 @@ nav:
       - 服务器介绍: "服务器介绍/服务器硬件以及网络.md"
   - 科研成果登记系统:
       - 项目部署: "科研成果登记系统/系统启动步骤.md"
+      - 访问方式: "科研成果登记系统/访问方式.md"
+  - OJ系统:
+      - 访问方式: "OJ系统/访问方式.md"
+      - 项目介绍:
+          - 概述: "OJ系统/introducition/README.md"
+          - 系统设计: "OJ系统/introducition/architecture.md"
+      - 快速部署:
+          - 环境配置: "OJ系统/deploy/env.md"
+          - 快速部署: "OJ系统/deploy/docker.md"
+          - 网站设置: "OJ系统/deploy/setting.md"
+          - 开启HTTPS: "OJ系统/deploy/open-https.md"
+          - 多个判题机: "OJ系统/deploy/multi-judgeserver.md"
+          - 如何更新: "OJ系统/deploy/update.md"
+          - 如何备份: "OJ系统/deploy/how-to-backup.md"
+          - 常见问题: "OJ系统/deploy/faq.md"
+      - 单体部署:
+          - 单体部署①--MySQL部署: "OJ系统/monomer/mysql.md"
+          - 单体部署②--MySQL更新工具: "OJ系统/monomer/mysql-checker.md"
+          - 单体部署③--Redis部署: "OJ系统/monomer/redis.md"
+          - 单体部署④--Nacos部署: "OJ系统/monomer/nacos.md"
+          - 单体部署⑤--后端部署: "OJ系统/monomer/backend.md"
+          - 单体部署⑥--判题服务部署: "OJ系统/monomer/judgeserver.md"
+          - 单体部署⑦--前端部署: "OJ系统/monomer/frontend.md"
+          - 单体部署⑧--评测数据同步: "OJ系统/monomer/rsync.md"
+      - 开发文档:
+          - 数据库说明: "OJ系统/develop/db.md"
+          - 调度与评测: "OJ系统/develop/judge_dispatcher.md"
+          - 安全沙盒: "OJ系统/develop/sandbox.md"
+          - 后端开发文档: "OJ系统/develop/backend.md"
+      - 使用文档:
+          - 题目管理: "OJ系统/use/import-problem.md"
+          - 判题模式: "OJ系统/use/judge-mode.md"
+          - 用例模式: "OJ系统/use/judge-case-mode.md"
+          - 取消评测: "OJ系统/use/cancel-judge.md"
+          - 测试用例: "OJ系统/use/testcase.md"
+          - 训练介绍: "OJ系统/use/training.md"
+          - 比赛介绍: "OJ系统/use/contest.md"
+          - 比赛滚榜: "OJ系统/use/scroll-board.md"
+          - 团队介绍: "OJ系统/use/group.md"
+          - 导入用户: "OJ系统/use/import-user.md"
+          - 用户管理: "OJ系统/use/admin-user.md"
+          - 通知和公告发布: "OJ系统/use/notice-announcement.md"
+          - 评论管理: "OJ系统/use/discussion-admin.md"
+          - 自定义前端: "OJ系统/use/update-fe.md"
+          - 自定义题目难度: "OJ系统/use/custom-difficulty.md"
+          - 取消前端免费CDN: "OJ系统/use/close-free-cdn.md"
+  - seafile网盘部署:
+      - 部署社区版: "seafile网盘/部署Seafile.md"
 
 
 #nav:
@@ -95,6 +143,13 @@ nav:
 #  - 好书推荐: "好书推荐.md"
 
 markdown_extensions:
+  - abbr
+#pymdownx.pathconverter 网页中嵌入pdf
+  - pymdownx.pathconverter:
+      base_path: ' '
+      relative_path: ' '
+      absolute: false
+      tags: 'a script img link object embed'
   - admonition
   - pymdownx.details
   - attr_list
@@ -130,6 +185,7 @@ plugins:
 # pip install mkdocs-glightbox
 # pip install markdown-checklist
 # pip install mkdocs-link-marker    # https://github.com/timmeinerzhagen/mkdocs-link-marker
+#pip install pymdown-extensions
 
 
 # mkdocs serve  运行
