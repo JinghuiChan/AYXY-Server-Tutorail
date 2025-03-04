@@ -177,6 +177,9 @@ extra_javascript:
 
 plugins:
   - glightbox
+  #页面引入pdf，点击打开pdf
+  - print-site:
+      enabled_if_env: ENABLE_PDF_EXPORT
 
 
 
@@ -186,6 +189,7 @@ plugins:
 # pip install markdown-checklist
 # pip install mkdocs-link-marker    # https://github.com/timmeinerzhagen/mkdocs-link-marker
 #pip install pymdown-extensions
+#pip install mkdocs-print-site-plugin
 
 
 # mkdocs serve  运行

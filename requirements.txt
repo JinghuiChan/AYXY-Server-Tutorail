@@ -4,3 +4,4 @@ mkdocs-glightbox==0.4.0
 markdown-checklist
 mkdocs-link-marker
 pymdown-extensions
+mkdocs-print-site-plugin
