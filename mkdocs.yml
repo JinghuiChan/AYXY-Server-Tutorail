@@ -121,7 +121,8 @@ nav:
           - 自定义题目难度: "OJ系统/use/custom-difficulty.md"
           - 取消前端免费CDN: "OJ系统/use/close-free-cdn.md"
   - seafile网盘部署:
-      - 部署社区版: "seafile网盘/部署Seafile.md"
+      - 访问方式: "seafile网盘/访问方式.md"
+      - 部署方式: "seafile网盘/部署Seafile.md"
 
 
 #nav:
